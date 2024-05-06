@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './quoteAPI';
+import { fetchQuote } from './quoteAPI';
 
 const initialState = {
   value: 0,
