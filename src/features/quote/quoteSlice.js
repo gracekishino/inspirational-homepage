@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchQuote } from './quoteAPI';
 
 const initialState = {
-  value: 0,
+  value: 'All Shall Be Well',
   status: 'idle',
 };
 
@@ -22,10 +22,7 @@ export const getQuote = createAsyncThunk(
 
 export const quoteSlice = createSlice({
   name: 'quote',
-  initialState: {
-    value: 'All Shall Be Well',
-    status: 'idle',
-  },
+  initialState: initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
