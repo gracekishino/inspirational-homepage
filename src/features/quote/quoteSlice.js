@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchQuote } from './quoteAPI';
 
 const initialState = {
-  value: 'All Shall Be Well',
+  value: 'All Shall Be Well and all shall be well',
   status: 'idle',
 };
 
